@@ -1,13 +1,6 @@
 import "./globals.css";
 import "./tailwind-out.css";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Roboto_Condensed } from "next/font/google";
-
-const robotoCondensed = Roboto_Condensed({
-  subsets: ["latin"],
-  weight: ["400", "700"], 
-  variable: "--font-roboto-condensed", 
-});
 import Navbar from "./component/Navbar";
 
 export const metadata = {
