@@ -66,7 +66,7 @@ const Services = () => {
                 </div>
 
                 {/* Cards */}
-                <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 cursor-pointer">
                     {cards.map((c) => (
                         <div
                             key={c.id}
