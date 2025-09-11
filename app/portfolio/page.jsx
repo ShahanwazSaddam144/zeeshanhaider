@@ -6,15 +6,15 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 export default function PortfolioPage() {
     const gallery = [
-        "https://zeeshanhaider.com/wp-content/uploads/2021/05/portfolio-01-free-img.jpg",
-        "https://zeeshanhaider.com/wp-content/uploads/2021/05/portfolio-03-free-img.jpg",
-        "https://zeeshanhaider.com/wp-content/uploads/2021/05/portfolio-02-free-img.jpg",
-        "https://zeeshanhaider.com/wp-content/uploads/2021/05/portfolio-05-free-img.jpg",
-        "https://zeeshanhaider.com/wp-content/uploads/2021/05/portfolio-04-free-img.jpg",
-        "https://zeeshanhaider.com/wp-content/uploads/2021/05/portfolio-06-free-img.jpg",
-        "https://zeeshanhaider.com/wp-content/uploads/2021/05/portfolio-07-free-img.jpg",
-        "https://zeeshanhaider.com/wp-content/uploads/2021/05/portfolio-09-free-img.jpg",
-        "https://zeeshanhaider.com/wp-content/uploads/2021/05/portfolio-08-free-img.jpg",
+        "/portfolio-01-free-img.webp",
+        "/portfolio-03-free-img.webp",
+        "/portfolio-02-free-img.webp",
+        "/portfolio-05-free-img.webp",
+        "/portfolio-04-free-img.webp",
+        "/portfolio-06-free-img.webp",
+        "/portfolio-07-free-img.webp",
+        "/portfolio-09-free-img.webp",
+        "/portfolio-08-free-img.webp",
     ]
 
     const total = gallery.length
@@ -96,24 +96,29 @@ export default function PortfolioPage() {
     return (
         <main className="min-h-screen bg-white text-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                {/* Header */}
-                <header className="mb-8 text-center">
-                    <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">Portfolio</h1>
-                    <p className="mt-3 text-base sm:text-lg text-gray-500 max-w-2xl mx-auto">
-                        A selection of UI/UX work, illustrations and project screenshots.
-                    </p>
+
+                <header className="mb-12 flex flex-col md:flex-row items-center justify-center gap-6">
+
+                    <div className="text-center md:text-left">
+                        <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">Portfolio</h1>
+                        <p className="mt-3 text-base sm:text-lg text-gray-500 max-w-xl">
+                            A selection of UI/UX work, illustrations and project screenshots.
+                        </p>
+                    </div>
+
+
+                    <div className="flex-shrink-0">
+                        <img
+                            src="/bg-05-free-img.webp"
+                            alt="Hero"
+                            className="w-40 h-40 md:w-56 md:h-56 object-cover rounded-full shadow-md"
+                            loading="eager"
+                            fetchPriority="high"
+                        />
+                    </div>
                 </header>
 
-                {/* Hero */}
-                <section className="mb-12 flex justify-center">
-                    <img
-                        src="https://zeeshanhaider.com/wp-content/uploads/2021/05/bg-05-free-img.jpg"
-                        alt="Hero"
-                        className="max-w-full w-full md:w-3/4 lg:w-2/3 rounded shadow-md object-cover"
-                        loading="eager"
-                        fetchPriority="high"
-                    />
-                </section>
+
 
                 {/* UI/UX Heading */}
                 <section className="mb-6 flex items-center justify-between">
