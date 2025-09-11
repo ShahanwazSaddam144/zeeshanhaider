@@ -4,6 +4,7 @@ import About from './component/About';
 import Services from './component/Services'
 import Footer from './component/Footer';
 import Skills from './component/Skills';
+import Achievements from './component/Achievements'
 
 const page = () => {
   return (
@@ -12,6 +13,7 @@ const page = () => {
       <About />
       <Services />
       <Skills />
+      <Achievements />
       <Footer />
     </div>
   )
