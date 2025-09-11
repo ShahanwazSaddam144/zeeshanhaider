@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://zeeshanhaider.com
+
+# Sitemaps
+Sitemap: https://zeeshanhaider.com/sitemap.xml
