@@ -1,10 +1,12 @@
-import React from 'react'
-import About from './component/About'
+import React from 'react';
+import Hero from './component/Hero';
+import Home from './component/Home';
 
 const page = () => {
   return (
     <div>
-      <About />
+      <Hero />
+      <Home />
     </div>
   )
 }
