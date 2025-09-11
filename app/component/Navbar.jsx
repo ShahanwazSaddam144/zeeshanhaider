@@ -44,12 +44,14 @@ export default function Navbar() {
                                 <li key={item.name} className="relative group">
                                     <Link
                                         href={item.href}
-                                        className={`text-gray-800 hover:text-blue-600 px-2 py-2 text-lg font-small transition-colors ${
-                                            pathName === item.href ? "font-medium text-blue-600" : ""
-                                        }`}
+                                        className={`px-2 py-2 text-lg transition-colors font-small ${pathName === item.href
+                                            ? "text-blue-600 font-medium"
+                                            : "text-gray-800 hover:text-blue-600"
+                                            }`}
                                     >
                                         {item.name}
                                     </Link>
+
                                     <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                                 </li>
                             ))}
@@ -91,13 +93,14 @@ export default function Navbar() {
                                 <li key={item.name}>
                                     <Link
                                         href={item.href}
-                                        className={`block px-3 py-4 rounded-md font-small text-gray-800 hover:text-blue-600 hover:bg-gray-50 border-b-[1px] border-black/10 text-lg  ${
-                                            pathName === item.href ? "font-medium text-blue-600" : ""
-                                        }`}
-                                        onClick={() => setOpen(false)}
+                                        className={`px-2 py-2 text-lg transition-colors font-small ${pathName === item.href
+                                                ? "text-blue-600 font-medium"
+                                                : "text-gray-800 hover:text-blue-600"
+                                            }`}
                                     >
                                         {item.name}
                                     </Link>
+
 
                                 </li>
                             ))}
