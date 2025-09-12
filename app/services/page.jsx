@@ -1,14 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import Footer from '../component/Footer';
 
 export default function NotFound() {
     return (
+        <>
         <div id="content" className="site-content min-h-screen flex items-center justify-center bg-gray-50 px-6">
             <div className="max-w-2xl text-center">
                
                 <header className="page-header mb-6">
-                    <h1 className="page-title text-3xl font-bold text-gray-800">
+                    <h1 className="page-title text-[40px] sm:text-[60px] font-playfair font-bold text-gray-800">
                         This page doesn&apos;t seem to exist.
                     </h1>
                 </header>
@@ -53,5 +55,7 @@ export default function NotFound() {
                 </Link>
             </div>
         </div>
+        <Footer />
+        </>
     );
 }

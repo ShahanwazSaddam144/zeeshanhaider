@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-      <section className="mt-20 border-t">
+      <section className="mt-20">
         <div className="max-w-6xl mx-auto px-5 py-10 flex justify-between">
           
           {/* Left Side */}
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t text-center py-5 text-gray-600 text-sm">
+        <div className="text-center py-5 text-gray-600 text-sm">
           Copyright © 2025 Zeeshanhaider | Powered by Zeeshanhaider
         </div>
       </section>

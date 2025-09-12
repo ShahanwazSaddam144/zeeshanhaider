@@ -6,6 +6,7 @@ import Footer from './component/Footer';
 import Skills from './component/Skills';
 import Achievements from './component/Achievements'
 
+
 const page = () => {
   return (
     <div>
